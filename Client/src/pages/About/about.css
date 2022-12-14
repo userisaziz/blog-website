@@ -1,0 +1,372 @@
+.cavani_tm_topbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 50px;
+  background-color: #fff;
+  z-index: 20;
+  display: none;
+}
+.cavani_tm_topbar .topbar_inner {
+  width: 100%;
+  height: 100%;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.cavani_tm_topbar .logo img {
+  max-width: 100px;
+  max-height: 40px;
+}
+.cavani_tm_topbar .hamburger {
+  padding: 0px;
+}
+.cavani_tm_topbar .hamburger-inner,
+.cavani_tm_topbar .hamburger-inner:after,
+.cavani_tm_topbar .hamburger-inner:before {
+  width: 30px;
+  height: 2px;
+}
+.cavani_tm_topbar .trigger {
+  position: relative;
+  top: 5px;
+}
+.cavani_tm_topbar .hamburger-box {
+  width: 30px;
+}
+.cavani_tm_mobile_menu {
+  position: fixed;
+  top: 50px;
+  right: -200px;
+  height: 100vh;
+  width: 200px;
+  z-index: 15;
+  background-color: #fff;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cavani_tm_mobile_menu.opened {
+  right: 0px;
+}
+.cavani_tm_mobile_menu .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding: 70px 20px 20px 20px;
+}
+.cavani_tm_mobile_menu .avatar {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  float: right;
+  margin-bottom: 60px;
+}
+.cavani_tm_mobile_menu .avatar .image {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cavani_tm_mobile_menu .menu_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 50px;
+}
+.cavani_tm_mobile_menu .menu_list ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.cavani_tm_mobile_menu .menu_list ul li {
+  margin: 0px 0px 7px 0px;
+}
+.cavani_tm_mobile_menu .menu_list ul li a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Poppins";
+}
+.cavani_tm_mobile_menu .social {
+  width: 100%;
+  float: left;
+  margin-bottom: 5px;
+}
+.cavani_tm_mobile_menu .social ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.cavani_tm_mobile_menu .social ul li {
+  margin: 0px 8px 0px 0px;
+  display: inline-block;
+}
+.cavani_tm_mobile_menu .social ul li:last-child {
+  margin-right: 0px;
+}
+.cavani_tm_mobile_menu .social ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.cavani_tm_mobile_menu .copyright {
+  width: 100%;
+  float: left;
+}
+.cavani_tm_mobile_menu .copyright p {
+  color: #333;
+  font-family: "Poppins";
+}
+
+/*---------------------------------------------------*/
+/*	04) CAVANI MAINPART
+/*---------------------------------------------------*/
+
+.cavani_tm_mainpart {
+  position: absolute;
+  top: 70px;
+  bottom: 70px;
+  left: 70px;
+  right: 70px;
+  overflow: hidden;
+}
+.cavani_tm_mainpart .author_image {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 40%;
+  z-index: 15;
+}
+.cavani_tm_mainpart .author_image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cavani_tm_mainpart .main_content {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 60%;
+}
+.cavani_tm_section {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.cavani_tm_section {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: 8;
+  transition: visibility 1s linear, opacity 0.5s linear;
+  -moz-transition: visibility 1s linear, opacity 0.5s linear;
+  -webkit-transition: visibility1s linear, opacity 0.5s linear;
+  -o-transition: visibility 1s linear, opacity 0.5s linear;
+}
+.cavani_tm_section.animated {
+  opacity: 1;
+  visibility: visible;
+  z-index: 9;
+}
+.cavani_tm_section.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.cavani_tm_section.hidden {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+}
+.cavani_tm_section::-webkit-scrollbar {
+  width: 0px;
+}
+.cavani_tm_section .section_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  padding: 92px 100px 0px 100px;
+}
+.cavani_tm_section .section_inner:before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100px;
+  background-color: #f6fbff;
+}
+
+/*---------------------------------------------------*/
+/*	05) CAVANI HOME
+/*---------------------------------------------------*/
+
+.cavani_tm_home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.cavani_tm_home .content {
+  padding-left: 100px;
+}
+.cavani_tm_home .name {
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.cavani_tm_home .line {
+  display: inline-block;
+  width: 70px;
+  height: 5px;
+  background-color: #333;
+  margin-bottom: 30px;
+}
+.cavani_tm_home .job {
+  font-size: 25px;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+.cavani_tm_home .job span {
+  color: #7d7789;
+}
+.cavani_tm_home .job b {
+  font-weight: 600;
+  color: #333;
+}
+.cavani_tm_button {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.cavani_tm_button a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background-color: #333;
+  padding: 13px 38px;
+  border: 2px solid #333;
+  font-family: "Poppins";
+  font-weight: 500;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cavani_tm_button a:hover {
+  background-color: transparent;
+  color: #333;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  height: 70%;
+  top: 50%;
+  width: 2px;
+  transform: translateY(-50%);
+  background-color: #999;
+}
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #333;
+  height: 2px;
+}
+
+.cavani_tm_header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  line-height: 70px;
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 70px;
+}
+.cavani_tm_header .logo img {
+  max-width: 110px;
+  max-height: 65px;
+}
+.cavani_tm_header .menu {
+  position: relative;
+}
+.cavani_tm_header .menu ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.cavani_tm_header .menu ul li {
+  margin: 0px;
+  float: left;
+}
+.cavani_tm_header .menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 0px 30px;
+  display: inline-block;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cavani_tm_header .menu .ccc {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  display: block;
+  top: 15px;
+  bottom: 15px;
+  background-color: #333;
+  z-index: -1;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.cavani_tm_header .menu ul li.mleave.active a {
+  color: #333;
+}
+.cavani_tm_header .menu ul li.active a {
+  color: #fff;
+}
+.cavani_tm_header .menu ul li a:hover {
+  color: #fff;
+}
