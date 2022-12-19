@@ -9,7 +9,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import Gallery from "./pages/gallery/gallery";
-import About from "./pages/About/About";
+import Contact from "./pages/contact/contact";
+import About from "./pages/about/about";
 
 function App() {
   const { user } = useContext(Context);
@@ -19,6 +20,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
+
         <Route path="/posts" element={<Homepage />} />
         <Route path="/register" element={user ? <Homepage /> : <Register />} />
         <Route path="/login" element={user ? <Homepage /> : <Login />} />

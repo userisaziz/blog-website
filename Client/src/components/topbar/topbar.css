@@ -62,3 +62,14 @@
   color: #666;
   cursor: pointer;
 }
+.mobnav {
+  display: none;
+}
+@media (width < 580px) {
+  .top {
+    display: none;
+  }
+  .mobnav {
+    display: block;
+  }
+}

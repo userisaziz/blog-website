@@ -20,7 +20,7 @@ export default function Post({ post }) {
           {new Date(post.createdAt).toDateString()}
         </span>
       </div>
-      <p className="postDesc">{post.desc}</p>
+      <article className="postDesc">{post.desc}</article>
     </div>
   );
 }
